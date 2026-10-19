@@ -1,0 +1,51 @@
+# ============================================================
+# Vaani RAG — Python Dependencies
+# ============================================================
+# Install: pip install -r requirements.txt
+# Python >= 3.10 required
+# ============================================================
+
+# ------------------------------------------------------------
+# Core UI Framework
+# ------------------------------------------------------------
+# Core UI
+streamlit
+
+# LangChain
+langchain
+langchain-groq
+langchain-community
+
+# Groq
+groq
+
+# PDF
+PyMuPDF
+pymupdf4llm
+
+# Voice STT
+faster-whisper
+av<19.0.0
+#SpeechRecognition
+#pyaudio
+
+# Voice TTS
+gTTS
+pydub
+
+# Language Detection
+langdetect
+
+# Streamlit Components
+streamlit-mic-recorder
+streamlit-extras
+
+# Utilities
+python-dotenv
+pydantic
+loguru
+
+# Testing
+pytest
+pytest-cov
+pytest-mock

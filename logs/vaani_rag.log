@@ -1,0 +1,289 @@
+2026-10-18 11:38:04 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 11:38:05 | INFO     | src.core.tree_builder:__init__:118 — TreeBuilder initialized
+2026-10-18 11:38:05 | INFO     | src.core.rag_pipeline:__init__:94 — RAG Pipeline initialized successfully!
+2026-10-18 11:38:05 | INFO     | src.core.rag_pipeline:load_document:106 — Loading document into RAG pipeline...
+2026-10-18 11:38:05 | INFO     | src.core.pdf_parser:parse:69 — Parsing PDF from path: assets/sample_docs/ai_basics.pdf
+2026-10-18 11:38:05 | SUCCESS  | src.core.pdf_parser:_extract:139 — Parsed 'ai_basics.pdf': 1 pages, 99 words
+2026-10-18 11:38:05 | INFO     | src.core.tree_builder:build:140 — Building new tree for: ai_basics.pdf
+2026-10-18 11:38:05 | INFO     | src.core.tree_builder:_build_tree:155 — Asking LLM to analyze document structure...
+2026-10-18 11:38:08 | SUCCESS  | src.core.tree_builder:_build_tree:208 — Document structure analyzed successfully!
+2026-10-18 11:38:08 | SUCCESS  | src.core.tree_builder:_build_tree:268 — Tree built: 3 sections for 'ai_basics.pdf'
+2026-10-18 11:38:08 | INFO     | src.core.tree_builder:_save_to_cache:316 — Tree cached: .cache/trees/ee20cbe98fa79a6e3660e3a68dad6ebb.json
+2026-10-18 11:38:08 | SUCCESS  | src.core.rag_pipeline:load_document:124 — Document loaded: 'ai_basics.pdf' with 3 sections
+2026-10-18 11:38:08 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'What is Narrow AI?...'
+2026-10-18 11:38:08 | INFO     | src.utils.language_detector:detect:93 — Language manually set: en
+2026-10-18 11:38:08 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 11:38:08 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 3 relevant nodes from 6 total
+2026-10-18 11:38:08 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'What is Narrow AI?...'
+2026-10-18 11:38:09 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.90, source_found: True
+2026-10-18 12:00:56 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 12:00:56 | INFO     | src.core.tree_builder:__init__:118 — TreeBuilder initialized
+2026-10-18 12:00:56 | INFO     | src.core.rag_pipeline:__init__:94 — RAG Pipeline initialized successfully!
+2026-10-18 12:00:56 | INFO     | __main__:get_pipeline:83 — RAG Pipeline created
+2026-10-18 12:00:56 | INFO     | src.utils.voice_handler:__init__:59 — VoiceHandler initialized with model size: base
+2026-10-18 12:00:56 | INFO     | __main__:get_voice_handler:94 — Voice Handler created
+2026-10-18 12:01:17 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:01:17 | INFO     | src.core.rag_pipeline:load_document:106 — Loading document into RAG pipeline...
+2026-10-18 12:01:17 | INFO     | src.core.pdf_parser:parse:66 — Parsing PDF from uploaded bytes...
+2026-10-18 12:01:17 | SUCCESS  | src.core.pdf_parser:_extract:139 — Parsed 'uploaded_document.pdf': 1 pages, 327 words
+2026-10-18 12:01:17 | INFO     | src.core.tree_builder:build:140 — Building new tree for: uploaded_document.pdf
+2026-10-18 12:01:17 | INFO     | src.core.tree_builder:_build_tree:155 — Asking LLM to analyze document structure...
+2026-10-18 12:01:21 | SUCCESS  | src.core.tree_builder:_build_tree:208 — Document structure analyzed successfully!
+2026-10-18 12:01:21 | SUCCESS  | src.core.tree_builder:_build_tree:268 — Tree built: 5 sections for 'uploaded_document.pdf'
+2026-10-18 12:01:21 | INFO     | src.core.tree_builder:_save_to_cache:316 — Tree cached: .cache/trees/2040763718615e1c01914fdf42fd0d5e.json
+2026-10-18 12:01:21 | SUCCESS  | src.core.rag_pipeline:load_document:124 — Document loaded: 'uploaded_document.pdf' with 5 sections
+2026-10-18 12:01:21 | SUCCESS  | __main__:handle_document_loading:147 — Document loaded successfully: uploaded_document.pdf
+2026-10-18 12:01:39 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:01:39 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:01:39 | INFO     | src.utils.voice_handler:model:68 — Loading Whisper model: base...
+2026-10-18 12:02:57 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:02:59 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:03:20 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:03:20 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'tell me my name...'
+2026-10-18 12:03:20 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.50 (2/4 words)
+2026-10-18 12:03:20 | INFO     | src.utils.language_detector:detect:100 — Detected: Hinglish
+2026-10-18 12:03:20 | INFO     | src.core.rag_pipeline:query:160 — Language detected: Hinglish
+2026-10-18 12:03:20 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 9 total
+2026-10-18 12:03:20 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 12:03:20 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: Hinglish
+2026-10-18 12:03:33 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:03:33 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'what is my name...'
+2026-10-18 12:03:33 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.50 (2/4 words)
+2026-10-18 12:03:33 | INFO     | src.utils.language_detector:detect:100 — Detected: Hinglish
+2026-10-18 12:03:33 | INFO     | src.core.rag_pipeline:query:160 — Language detected: Hinglish
+2026-10-18 12:03:33 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 9 total
+2026-10-18 12:03:33 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 12:03:33 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: Hinglish
+2026-10-18 12:04:06 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:04:06 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:04:19 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:04:19 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'my name...'
+2026-10-18 12:04:19 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/2 words)
+2026-10-18 12:04:20 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: sk
+2026-10-18 12:04:20 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'sk' → falling back to 'en'
+2026-10-18 12:04:20 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 12:04:20 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 9 total
+2026-10-18 12:04:20 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 12:04:20 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 12:04:48 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:04:48 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'deepak...'
+2026-10-18 12:04:48 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 12:04:49 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: nl
+2026-10-18 12:04:49 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'nl' → falling back to 'en'
+2026-10-18 12:04:49 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 12:04:49 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 3 relevant nodes from 9 total
+2026-10-18 12:04:49 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'deepak...'
+2026-10-18 12:04:50 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.90, source_found: True
+2026-10-18 12:04:50 | INFO     | src.utils.voice_handler:text_to_speech:155 — Generating speech in language: en
+2026-10-18 12:05:03 | SUCCESS  | src.utils.voice_handler:model:74 — Whisper model loaded successfully!
+2026-10-18 12:05:03 | ERROR    | src.utils.voice_handler:transcribe:136 — Transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:05:16 | SUCCESS  | src.utils.voice_handler:text_to_speech:179 — Speech generated: 449472 bytes
+2026-10-18 12:05:16 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.9, language: English
+2026-10-18 12:05:50 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:05:50 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'ramayana...'
+2026-10-18 12:05:50 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 12:05:50 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: tl
+2026-10-18 12:05:50 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'tl' → falling back to 'en'
+2026-10-18 12:05:50 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 12:05:50 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 9 total
+2026-10-18 12:05:50 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 12:05:50 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 12:06:45 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: deepakresume6.pdf
+2026-10-18 12:06:45 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'outside of pdf...'
+2026-10-18 12:06:45 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/3 words)
+2026-10-18 12:06:45 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: en
+2026-10-18 12:06:45 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 12:06:45 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 9 total
+2026-10-18 12:06:45 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 12:06:45 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 12:06:59 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 12:06:59 | INFO     | src.core.tree_builder:__init__:118 — TreeBuilder initialized
+2026-10-18 12:06:59 | INFO     | src.core.rag_pipeline:__init__:94 — RAG Pipeline initialized successfully!
+2026-10-18 12:06:59 | INFO     | __main__:get_pipeline:83 — RAG Pipeline created
+2026-10-18 12:06:59 | INFO     | src.utils.voice_handler:__init__:59 — VoiceHandler initialized with model size: base
+2026-10-18 12:06:59 | INFO     | __main__:get_voice_handler:94 — Voice Handler created
+2026-10-18 12:07:33 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:07:33 | INFO     | src.core.rag_pipeline:load_document:106 — Loading document into RAG pipeline...
+2026-10-18 12:07:33 | INFO     | src.core.pdf_parser:parse:66 — Parsing PDF from uploaded bytes...
+2026-10-18 12:07:33 | SUCCESS  | src.core.pdf_parser:_extract:139 — Parsed 'uploaded_document.pdf': 157 pages, 22279 words
+2026-10-18 12:07:33 | INFO     | src.core.tree_builder:build:140 — Building new tree for: uploaded_document.pdf
+2026-10-18 12:07:33 | INFO     | src.core.tree_builder:_build_tree:155 — Asking LLM to analyze document structure...
+2026-10-18 12:07:36 | WARNING  | src.core.tree_builder:_build_tree:211 — LLM structure analysis failed: Unterminated string starting at: line 57 column 22 (char 2478)
+2026-10-18 12:07:36 | INFO     | src.core.tree_builder:_build_tree:212 — Using fallback structure...
+2026-10-18 12:07:36 | SUCCESS  | src.core.tree_builder:_build_tree:268 — Tree built: 6 sections for 'uploaded_document.pdf'
+2026-10-18 12:07:36 | INFO     | src.core.tree_builder:_save_to_cache:316 — Tree cached: .cache/trees/35c101819a09509099469337e7c7b6a3.json
+2026-10-18 12:07:36 | SUCCESS  | src.core.rag_pipeline:load_document:124 — Document loaded: 'uploaded_document.pdf' with 6 sections
+2026-10-18 12:07:36 | SUCCESS  | __main__:handle_document_loading:147 — Document loaded successfully: uploaded_document.pdf
+2026-10-18 12:07:53 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:07:53 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:07:53 | INFO     | src.utils.voice_handler:model:68 — Loading Whisper model: base...
+2026-10-18 12:07:54 | SUCCESS  | src.utils.voice_handler:model:74 — Whisper model loaded successfully!
+2026-10-18 12:07:54 | ERROR    | src.utils.voice_handler:transcribe:136 — Transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:07:54 | ERROR    | __main__:process_voice_query:285 — Voice transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:13 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:08:13 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:08:13 | ERROR    | src.utils.voice_handler:transcribe:136 — Transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:13 | ERROR    | __main__:process_voice_query:285 — Voice transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:27 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:08:27 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:08:27 | ERROR    | src.utils.voice_handler:transcribe:136 — Transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:27 | ERROR    | __main__:process_voice_query:285 — Voice transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:30 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:08:31 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:08:35 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 12:08:35 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:08:35 | ERROR    | src.utils.voice_handler:transcribe:136 — Transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:08:35 | ERROR    | __main__:process_voice_query:285 — Voice transcription failed: open() got an unexpected keyword argument 'metadata_errors'
+2026-10-18 12:48:49 | INFO     | src.utils.voice_handler:__init__:59 — VoiceHandler initialized with model size: base
+2026-10-18 12:48:49 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 12:48:49 | INFO     | src.utils.voice_handler:model:68 — Loading Whisper model: base...
+2026-10-18 12:48:51 | SUCCESS  | src.utils.voice_handler:model:74 — Whisper model loaded successfully!
+2026-10-18 12:48:52 | SUCCESS  | src.utils.voice_handler:transcribe:125 — Transcription complete: '...'
+2026-10-18 12:48:52 | INFO     | src.utils.voice_handler:text_to_speech:155 — Generating speech in language: en
+2026-10-18 12:48:53 | SUCCESS  | src.utils.voice_handler:text_to_speech:179 — Speech generated: 26880 bytes
+2026-10-18 16:00:17 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 16:00:17 | INFO     | src.core.tree_builder:__init__:118 — TreeBuilder initialized
+2026-10-18 16:00:17 | INFO     | src.core.rag_pipeline:__init__:94 — RAG Pipeline initialized successfully!
+2026-10-18 16:00:17 | INFO     | __main__:get_pipeline:83 — RAG Pipeline created
+2026-10-18 16:00:17 | INFO     | src.utils.voice_handler:__init__:59 — VoiceHandler initialized with model size: base
+2026-10-18 16:00:17 | INFO     | __main__:get_voice_handler:94 — Voice Handler created
+2026-10-18 16:00:26 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:00:26 | INFO     | src.core.rag_pipeline:load_document:106 — Loading document into RAG pipeline...
+2026-10-18 16:00:26 | INFO     | src.core.pdf_parser:parse:66 — Parsing PDF from uploaded bytes...
+2026-10-18 16:00:26 | SUCCESS  | src.core.pdf_parser:_extract:139 — Parsed 'uploaded_document.pdf': 157 pages, 22279 words
+2026-10-18 16:00:26 | INFO     | src.core.tree_builder:build:136 — Tree loaded from cache: uploaded_document.pdf
+2026-10-18 16:00:26 | SUCCESS  | src.core.rag_pipeline:load_document:124 — Document loaded: 'uploaded_document.pdf' with 6 sections
+2026-10-18 16:00:26 | SUCCESS  | __main__:handle_document_loading:147 — Document loaded successfully: uploaded_document.pdf
+2026-10-18 16:00:35 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:00:35 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 16:00:35 | INFO     | src.utils.voice_handler:model:68 — Loading Whisper model: base...
+2026-10-18 16:00:37 | SUCCESS  | src.utils.voice_handler:model:74 — Whisper model loaded successfully!
+2026-10-18 16:00:38 | SUCCESS  | src.utils.voice_handler:transcribe:125 — Transcription complete: 'Vattage Transformer...'
+2026-10-18 16:00:38 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'Vattage Transformer...'
+2026-10-18 16:00:38 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/2 words)
+2026-10-18 16:00:38 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: da
+2026-10-18 16:00:38 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'da' → falling back to 'en'
+2026-10-18 16:00:38 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 16:00:38 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 2 relevant nodes from 6 total
+2026-10-18 16:00:38 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'Vattage Transformer...'
+2026-10-18 16:00:40 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.10, source_found: False
+2026-10-18 16:00:40 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.1, language: English
+2026-10-18 16:00:52 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:00:52 | INFO     | src.utils.voice_handler:transcribe:93 — Starting audio transcription...
+2026-10-18 16:00:54 | SUCCESS  | src.utils.voice_handler:transcribe:125 — Transcription complete: 'گران فور مر گیا ہے...'
+2026-10-18 16:00:54 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'گران فور مر گیا ہے...'
+2026-10-18 16:00:54 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/5 words)
+2026-10-18 16:00:54 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: ur
+2026-10-18 16:00:54 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'ur' → falling back to 'hi'
+2026-10-18 16:00:54 | INFO     | src.core.rag_pipeline:query:160 — Language detected: Hindi
+2026-10-18 16:00:54 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 6 total
+2026-10-18 16:00:54 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 16:00:54 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: Hindi
+2026-10-18 16:01:02 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:01:02 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:01:08 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:01:08 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'transformers...'
+2026-10-18 16:01:08 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 16:01:08 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: da
+2026-10-18 16:01:08 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'da' → falling back to 'en'
+2026-10-18 16:01:08 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 16:01:08 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 6 total
+2026-10-18 16:01:08 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 16:01:08 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 16:01:21 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:01:21 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'what is transformers...'
+2026-10-18 16:01:21 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.67 (2/3 words)
+2026-10-18 16:01:21 | INFO     | src.utils.language_detector:detect:100 — Detected: Hinglish
+2026-10-18 16:01:21 | INFO     | src.core.rag_pipeline:query:160 — Language detected: Hinglish
+2026-10-18 16:01:21 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 6 total
+2026-10-18 16:01:21 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 16:01:21 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: Hinglish
+2026-10-18 16:01:36 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 16:01:36 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'llm...'
+2026-10-18 16:01:36 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 16:01:36 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: ca
+2026-10-18 16:01:36 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'ca' → falling back to 'en'
+2026-10-18 16:01:36 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 16:01:36 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 3 relevant nodes from 6 total
+2026-10-18 16:01:36 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'llm...'
+2026-10-18 16:01:37 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.10, source_found: False
+2026-10-18 16:01:37 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.1, language: English
+2026-10-18 16:06:15 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 16:46:19 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 17:10:24 | INFO     | src.core.groq_client:__init__:73 — GroqClient initialized with model: openai/gpt-oss-120b
+2026-10-18 17:10:24 | INFO     | src.core.tree_builder:__init__:118 — TreeBuilder initialized
+2026-10-18 17:10:24 | INFO     | src.core.rag_pipeline:__init__:94 — RAG Pipeline initialized successfully!
+2026-10-18 17:10:24 | INFO     | __main__:get_pipeline:83 — RAG Pipeline created
+2026-10-18 17:10:24 | INFO     | src.utils.voice_handler:__init__:59 — VoiceHandler initialized with model size: base
+2026-10-18 17:10:24 | INFO     | __main__:get_voice_handler:94 — Voice Handler created
+2026-10-18 17:10:38 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:10:38 | INFO     | src.core.rag_pipeline:load_document:106 — Loading document into RAG pipeline...
+2026-10-18 17:10:38 | INFO     | src.core.pdf_parser:parse:66 — Parsing PDF from uploaded bytes...
+2026-10-18 17:10:38 | SUCCESS  | src.core.pdf_parser:_extract:139 — Parsed 'uploaded_document.pdf': 157 pages, 22279 words
+2026-10-18 17:10:38 | INFO     | src.core.tree_builder:build:136 — Tree loaded from cache: uploaded_document.pdf
+2026-10-18 17:10:38 | SUCCESS  | src.core.rag_pipeline:load_document:124 — Document loaded: 'uploaded_document.pdf' with 6 sections
+2026-10-18 17:10:38 | SUCCESS  | __main__:handle_document_loading:147 — Document loaded successfully: uploaded_document.pdf
+2026-10-18 17:10:44 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:10:44 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'transformers...'
+2026-10-18 17:10:44 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 17:10:45 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: da
+2026-10-18 17:10:45 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'da' → falling back to 'en'
+2026-10-18 17:10:45 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 17:10:45 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 6 total
+2026-10-18 17:10:45 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 17:10:45 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 17:10:58 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:10:58 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'summary of pdf...'
+2026-10-18 17:10:58 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/3 words)
+2026-10-18 17:10:58 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: en
+2026-10-18 17:10:58 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 17:10:58 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 1 relevant nodes from 6 total
+2026-10-18 17:10:58 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'summary of pdf...'
+2026-10-18 17:11:00 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.75, source_found: True
+2026-10-18 17:11:00 | INFO     | src.utils.voice_handler:text_to_speech:155 — Generating speech in language: en
+2026-10-18 17:11:35 | SUCCESS  | src.utils.voice_handler:text_to_speech:179 — Speech generated: 799104 bytes
+2026-10-18 17:11:35 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.75, language: English
+2026-10-18 17:11:57 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:11:57 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:12:15 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:12:15 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'mera naam...'
+2026-10-18 17:12:15 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/2 words)
+2026-10-18 17:12:15 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: id
+2026-10-18 17:12:15 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'id' → falling back to 'en'
+2026-10-18 17:12:15 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 17:12:15 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 0 relevant nodes from 6 total
+2026-10-18 17:12:15 | WARNING  | src.core.rag_pipeline:query:166 — No relevant nodes found in tree!
+2026-10-18 17:12:15 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.0, language: English
+2026-10-18 17:12:27 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:12:27 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'my name...'
+2026-10-18 17:12:27 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/2 words)
+2026-10-18 17:12:27 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: sk
+2026-10-18 17:12:27 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'sk' → falling back to 'en'
+2026-10-18 17:12:27 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 17:12:27 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 1 relevant nodes from 6 total
+2026-10-18 17:12:27 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'my name...'
+2026-10-18 17:12:29 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.10, source_found: False
+2026-10-18 17:12:29 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.1, language: English
+2026-10-18 17:12:40 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:12:40 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'llm...'
+2026-10-18 17:12:40 | DEBUG    | src.utils.language_detector:_is_hinglish:143 — Hinglish ratio: 0.00 (0/1 words)
+2026-10-18 17:12:40 | INFO     | src.utils.language_detector:detect:105 — Auto-detected language: ca
+2026-10-18 17:12:40 | WARNING  | src.utils.language_detector:detect:119 — Unsupported language 'ca' → falling back to 'en'
+2026-10-18 17:12:40 | INFO     | src.core.rag_pipeline:query:160 — Language detected: English
+2026-10-18 17:12:40 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 3 relevant nodes from 6 total
+2026-10-18 17:12:40 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'llm...'
+2026-10-18 17:12:42 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.75, source_found: True
+2026-10-18 17:12:42 | INFO     | src.utils.voice_handler:text_to_speech:155 — Generating speech in language: en
+2026-10-18 17:13:11 | SUCCESS  | src.utils.voice_handler:text_to_speech:179 — Speech generated: 260352 bytes
+2026-10-18 17:13:11 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.75, language: English
+2026-10-18 17:13:32 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:13:43 | INFO     | src.ui.components:render_sidebar_document_section:61 — File uploaded: Building LLMs From Scratch.pdf
+2026-10-18 17:13:43 | INFO     | src.core.rag_pipeline:query:153 — Processing query: 'llm...'
+2026-10-18 17:13:43 | INFO     | src.utils.language_detector:detect:93 — Language manually set: hi
+2026-10-18 17:13:43 | INFO     | src.core.rag_pipeline:query:160 — Language detected: Hindi
+2026-10-18 17:13:43 | INFO     | src.core.rag_pipeline:_retrieve_relevant_nodes:235 — Retrieved 3 relevant nodes from 6 total
+2026-10-18 17:13:43 | INFO     | src.core.groq_client:answer_from_tree:109 — Answering question: 'llm...'
+2026-10-18 17:13:44 | SUCCESS  | src.core.groq_client:answer_from_tree:154 — Answer generated — confidence: 0.60, source_found: True
+2026-10-18 17:13:44 | INFO     | src.utils.voice_handler:text_to_speech:155 — Generating speech in language: hi
+2026-10-18 17:14:01 | SUCCESS  | src.utils.voice_handler:text_to_speech:179 — Speech generated: 206592 bytes
+2026-10-18 17:14:01 | INFO     | __main__:process_query:231 — Query processed — confidence: 0.6, language: Hindi
