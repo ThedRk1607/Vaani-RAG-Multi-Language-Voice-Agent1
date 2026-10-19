@@ -1,4 +1,4 @@
-# 🎙️ Vaani RAG — Multi-Language Voice Agent
+# 🎙️ They are RAG — Multi-Language Voice Agent
 
 <div align="center">
 
@@ -89,7 +89,7 @@ vaani-rag/
 ├── 📄 README.md                     # Project documentation
 ├── 📄 CHANGELOG.md                  # Version history
 ├── 📄 CONTRIBUTING.md               # Contribution guidelines
-├── 📄 LICENSE                       # MIT License
+├── 📄 LICENSE # MY License
 │
 ├── 📁 src/
 │   ├── 📁 core/
@@ -149,7 +149,7 @@ vaani-rag/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/vaani-rag.git
+git clone https://github.com/ThedRk1607/Vaani-RAG-Multi-Language-Voice-Agent1.git
 cd vaani-rag
 
 # 2. Create and activate virtual environment
